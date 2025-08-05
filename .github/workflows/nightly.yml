@@ -117,5 +117,5 @@ jobs:
           -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
           -H "X-GitHub-Api-Version: 2022-11-28" \
           -H "Content-Type: application/octet-stream" \
-          "https://uploads.github.com/repos/project-error/npwd/releases/${{ steps.auto_release.outputs.release_id }}/assets?name=npwd.zip" \
+          "https://uploads.github.com/repos/SkylarPlayz348/npwd/releases/${{ steps.auto_release.outputs.release_id }}/assets?name=npwd.zip" \
           --data-binary "@npwd.zip"
