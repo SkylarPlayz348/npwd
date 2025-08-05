@@ -129,7 +129,7 @@ export class CallService {
   handleEndCall() {
     if (this.callSound) this.callSound.stop();
     this.currentCall = 0;
-    exp['pma-voice'].setCallChannel(0);
+    exp['tokovoip_script'].setCallChannel(0);
     this.currentPendingCall = null;
 
     this.openCallModal(false);
